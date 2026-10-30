@@ -1,6 +1,5 @@
 #pragma once
 #include <vector>
-#include <iostream>
 #include "Product.h"
 
 class ShopDatabase {
@@ -20,6 +19,5 @@ public:
 
     void saveProduct(const Product& p) {
         products.push_back(p);
-        std::cout << "Товар '" << p.name << "' сохранен в базу данных магазина.\n";
     }
 };
